@@ -1,0 +1,10 @@
+{
+    "name": "lhgames-api-backend",
+    "version": "1.0.0",
+    "description": "API local (Node.js puro, sem dependencias externas) para o fluxo de CRUD de produtos da loja LH Games (eletronicos e jogos).",
+    "main": "server.js",
+    "scripts": {
+          "start": "node server.js"
+    },
+    "dependencies": {}
+}
