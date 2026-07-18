@@ -1,0 +1,56 @@
+/* ===== LH Games - estilos globais ===== */
+:root {
+    --roxo-escuro: #12071f;
+    --roxo: #1e0d33;
+    --rosa-neon: #ff3cb4;
+    --ciano-neon: #00dcff;
+}
+
+body {
+    background-color: var(--roxo-escuro);
+    color: #f1f1f1;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.navbar-lhgames {
+    background-color: var(--roxo);
+    border-bottom: 2px solid var(--rosa-neon);
+}
+
+.navbar-lhgames .navbar-brand {
+    color: var(--ciano-neon) !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card-produto {
+    background-color: var(--roxo);
+    border: 1px solid var(--rosa-neon);
+    border-radius: 10px;
+}
+
+.btn-neon {
+    background-color: var(--rosa-neon);
+    border: none;
+    color: #12071f;
+    font-weight: bold;
+}
+
+.btn-neon:hover {
+    background-color: var(--ciano-neon);
+    color: #12071f;
+}
+
+.table-lhgames {
+    color: #f1f1f1;
+}
+
+.mensagem-erro {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.mensagem-sucesso {
+    color: var(--ciano-neon);
+    font-weight: bold;
+}
