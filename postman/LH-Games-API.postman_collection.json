@@ -1,0 +1,92 @@
+{
+    "info": {
+          "name": "LH Games - API Local (CRUD Produtos)",
+          "description": "Colecao de testes das rotas da API local usada na atividade 'Desenvolvimento e Integracao de uma API Local para o Fluxo do CRUD de E-commerce'.",
+          "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "variable": [
+          {
+                  "key": "baseUrl",
+                  "value": "http://localhost:3000"
+          }
+    ],
+    "item": [
+          {
+                  "name": "GET - Listar produtos",
+                  "request": {
+                            "method": "GET",
+                            "header": [],
+                            "url": {
+                                        "raw": "{{baseUrl}}/api/produtos",
+                                        "host": ["{{baseUrl}}"],
+                                        "path": ["api", "produtos"]
+                            }
+                  },
+                  "response": []
+          },
+          {
+                  "name": "POST - Criar produto",
+                  "request": {
+                            "method": "POST",
+                            "header": [
+                                        { "key": "Content-Type", "value": "application/json" }
+                            ],
+                            "body": {
+                                        "mode": "raw",
+                                        "raw": "{\n  \"nome\": \"Headset Pro Gamer\",\n  \"categoria\": \"Acessorio\",\n  \"preco\": 329.9,\n  \"quantidade\": 15\n}"
+                            },
+                            "url": {
+                                        "raw": "{{baseUrl}}/api/produtos",
+                                        "host": ["{{baseUrl}}"],
+                                        "path": ["api", "produtos"]
+                            }
+                  },
+                  "response": []
+          },
+          {
+                  "name": "GET - Consultar produto por ID",
+                  "request": {
+                            "method": "GET",
+                            "header": [],
+                            "url": {
+                                        "raw": "{{baseUrl}}/api/produtos/1",
+                                        "host": ["{{baseUrl}}"],
+                                        "path": ["api", "produtos", "1"]
+                            }
+                  },
+                  "response": []
+          },
+          {
+                  "name": "PUT - Atualizar produto",
+                  "request": {
+                            "method": "PUT",
+                            "header": [
+                                        { "key": "Content-Type", "value": "application/json" }
+                            ],
+                            "body": {
+                                        "mode": "raw",
+                                        "raw": "{\n  \"quantidade\": 10\n}"
+                            },
+                            "url": {
+                                        "raw": "{{baseUrl}}/api/produtos/4",
+                                        "host": ["{{baseUrl}}"],
+                                        "path": ["api", "produtos", "4"]
+                            }
+                  },
+                  "response": []
+          },
+          {
+                  "name": "DELETE - Remover produto",
+                  "request": {
+                            "method": "DELETE",
+                            "header": [],
+                            "url": {
+                                        "raw": "{{baseUrl}}/api/produtos/2",
+                                        "host": ["{{baseUrl}}"],
+                                        "path": ["api", "produtos", "2"]
+                            }
+                  },
+                  "response": []
+          }
+    ]
+}
