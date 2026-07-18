@@ -1,0 +1,10 @@
+# Node / Angular
+node_modules/
+dist/
+.angular/
+npm-debug.log
+package-lock.json
+
+# Sistema
+.DS_Store
+*.log
